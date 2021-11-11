@@ -1,6 +1,6 @@
 # expose-units-example
 
-This is an exmaple project, illustrating a possible bug or regression in Vue Test Utils.
+This is an example project, illustrating a possible bug or regression in Vue Test Utils.
 
 It creates and tests a child component which returns a method via context.expose.
 
