@@ -1,13 +1,12 @@
 import { shallowMount } from '@vue/test-utils'
-import Child from '@/components/Child.vue'
+import TemplateChild from '@/components/TemplateChild.vue'
 
-describe('Child.vue', () => {
+describe('TemplateChild.vue', () => {
   it('increments count when increment method is called', async () => {
-    const wrapper = shallowMount(Child)
+    const wrapper = shallowMount(TemplateChild)
     
     expect(wrapper.element.textContent).toBe('0')
-
-    await wrapper.vm.increment() // This will fail with "TypeError: wrapper.vm.increment is not a function"
+    await wrapper.vm.increment() // This will pass
     expect(wrapper.element.textContent).toBe('1')
   })
 })
